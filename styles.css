@@ -1,0 +1,185 @@
+* {
+    font-family: 'Barlow Semi Condensed', serif;
+    font-weight: 500;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2rem 2.5rem;
+    min-height: 100vh;
+    align-items: center;
+}
+
+h6 {
+    font-size: 11px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+p {
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.Daniel-card {
+    background-color: rgb(115,63,200);
+    color: white;
+    background-image: url=("bg-pattern-quotation.svg");
+    position: relative;
+    z-index: 1;
+}
+
+.quotes {
+    position: fixed;
+    z-index: -1;
+    margin-left: 15%;
+    margin-top: -2%;
+}
+
+.Daniel-card-header {
+    display: flex;
+    align-items: center;
+}
+
+.Daniel-card-header-img {
+    border: 2.3px solid rgb(169,126,221);
+}
+
+.Daniel-card-header-text h5, .Daniel-card-header-text h6 {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.Jonathan-card {
+    background-color: rgb(70,82,103);
+    color: white;
+}
+
+.Jonathan-card-header {
+    display: flex;
+    align-items: center;
+}
+
+.Jonathan-card-header-text h6{
+    color: gray;
+}
+
+.Jonathan-card-header-text h5, .Jonathan-card-header-text h6 {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.Jeanette-card {
+    background-color: rgb(255,255,255);
+}
+
+.Jeanette-card-header {
+    display: flex;
+    align-items: center;
+}
+
+.Jeanette-card-header-text h5, .Jeanette-card-header-text h6 {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.Patrick-card {
+    background-color: rgb(21,26,37);
+    color: white;
+}
+
+.Patrick-card-header {
+    display: flex;
+    align-items: center;
+}
+
+.Patrick-card-header img {
+    border: 2.3px solid rgb(115,63,200);
+}
+
+.Patrick-card-header-text h5, .Patrick-card-header-text h6 {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.Kira-card {
+    background-color: rgb(255,255,255);
+}
+
+.Kira-card-header {
+    display: flex;
+    align-items: center;
+}
+
+.Kira-card-header-text h5, .Kira-card-header-text h6 {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.Kira-card-header-text h6{
+    color: gray;
+}
+
+.Daniel-card, .Jonathan-card, .Jeanette-card, .Patrick-card, .Kira-card {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 5px gray;
+}
+
+.Daniel-card-header-img, .Patrick-card-header-img, .Kira-card-header-img,
+ .Jonathan-card-header-img, .Jeanette-card-header-img, .Kira-card-header-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+@media only screen and (min-width: 770px) {
+
+    .main-container {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 1fr 1fr;
+        max-width: 1100px;
+        max-height: 90vh;
+        height: 100vh;
+    }
+
+    .Daniel-card {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 1;
+    }
+
+    .Patrick-card {
+        grid-column: 2 / span 2;
+        grid-row: 2 / span 1;
+    }
+
+    .Jeanette-card {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    .Kira-card {
+        grid-column: 4 / span 1;
+        grid-row: 1 / span 2;
+    }
+
+    .Daniel-card, .Jonathan-card, .Jeanette-card, .Patrick-card, .Kira-card {
+        padding: 30px;
+        
+    }
+
+}
